@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Website</title>
+    <link rel="stylesheet" href="Web stranica.css">
+</head>
+<body>
+<nav>
+        <img src="Image/lopta.png" class="hello">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SPECIFICATIONS</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">CONNECT</a></li>
+        </ul>
+</nav>
+<section>
+    <div class="right-col">
+        <img src="Image/playbutton.png" id="icon">
+    </div>
+</section>
+    <div class="footer">
+        <div class="col-1">
+            <h2>BELGIJA</h2>
+            <p>1 T. Courtois</p>
+            <p>15 T. Meunier</p>
+            <p>2 T. Alderweireld</p>
+            <p>5 J. Vertonghen</p>
+            <p>21 T. Castagne</p>
+            <p>19 L. Dendoncker</p>
+            <p>6 A. Witsel</p>
+            <p>7 K. De Bruyne</p>
+            <p>14 D. Mertens</p>
+            <p>11 Y. Ferreira Carrasco</p>
+            <p>17 L. Trossard</p>
+            <p>3 A. Theate</p>
+            <p>4 W. Faes</p>
+            <p>8 Y. Tielemans</p>
+            <p>9 R. Lukaku</p>
+            <p>10 E. Hazard</p>
+            <p>12 S. Mignolet</p>
+            <p>13 K. Casteels</p>
+            <p>16 T. Hazard</p>
+            <p>20 H. Vanaken</p>
+            <p>22 C. De Ketelaere</p>
+            <p>23 M. Batshuayi</p>
+            <p>24 L. Openda</p>
+            <p>25 J. Doku</p>
+            <p>26 Z. Debast</p>
+            <div class="col-15">
+                <p>Izvođač, pjesma: Uvijek vjerni - Ovo je Hrvatska</p>
+            </div>
+        </div>
+        <div class="col-2">
+            <h2>POPIS IGRAČA</h2>
+        </div>
+        <div class="col-3">
+            <h2>HRVATSKA</h2>
+            <p>1 D. Livaković</p>
+            <p>22 J. Juranović</p>
+            <p>6 D. Lovren</p>
+            <p>20 J. Gvardiol</p>
+            <p>19 B. Sosa</p>
+            <p>10 L. Modrić</p>
+            <p>11 M. Brozović</p>
+            <p>8 M. Kovačić</p>
+            <p>9 A. Kramarić</p>
+            <p>14 M. Livaja</p>
+            <p>4 I. Perišić</p>
+            <p>2 J. Stnišić</p>
+            <p>3 B. Barišić</p>
+            <p>5 M. Erlić</p>
+            <p>7 L. Majer</p>
+            <p>12 I. Grbić</p>
+            <p>13 N. Vlašić</p>
+            <p>15 M. Pašalić</p>
+            <p>16 B. Petković</p>
+            <p>17 A. Budimir</p>
+            <p>18 M. Oršić</p>
+            <p>21 D. Vida</p>
+            <p>23 I. Ivušić</p>
+            <p>24 J. Šutalo</p>
+            <p>25 L. Sučić</p>
+            <p>26 K. Jakić</p>
+
+
+        </div>
+    </div>
+<audio id="mySong" loop>
+    <source src="Uvijek_vjerni.mp3" type="audio/mpeg">
+</audio>
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        if(mySong.paused){
+            mySong.play();
+            icon.src = "Image/stopbutton2.png";
+        }
+        else{
+            mySong.paused();
+            icon.src = "Image/playbutton.png";
+        }
+    }
+</script>
+</body>
+</html>
